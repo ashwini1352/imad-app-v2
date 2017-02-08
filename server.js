@@ -16,6 +16,17 @@ This is the starting content used in the file.Hey let's add more to it and enjoy
 This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here.. can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..`
 };
 
+function createTemplate (data){
+    var title = data.title;
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content;
+    
+}
+
+
+
+
 var htmlTemplate =`
  <html>
   <head>

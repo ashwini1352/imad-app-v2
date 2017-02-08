@@ -16,10 +16,10 @@ This is the starting content used in the file.Hey let's add more to it and enjoy
 This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here.. can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..`
 };
 
-var htmlTemplate = {
+var htmlTemplate =`
  <html>
   <head>
-    <title>${title}<title />
+    <title>${title}</title>
     <meta name = "viewport" content = "width=device-width, initial-scale=1" /> 
       <link href="/ui/style.css" rel="stylesheet" />
     
@@ -45,7 +45,7 @@ var htmlTemplate = {
 </html>
 
     
-};
+`;
 
 
 

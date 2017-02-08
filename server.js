@@ -5,6 +5,50 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne = {
+    title : 'Article One | Ashwini',
+    heading:'Article One',
+    date :'8th Feb-17',
+    content : `This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here.. can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
+
+This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here.. can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
+
+This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here.. can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..`
+};
+
+var htmlTemplate = {
+ <html>
+  <head>
+    <title>${title}<title />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1" /> 
+      <link href="/ui/style.css" rel="stylesheet" />
+    
+  </head>
+  
+  <body>
+      <div class="container">
+             <div> <a href ="/">Home</a></div>
+             <hr/>
+             <h3 style ="color: black;">${heading}</h3>
+             <div style ="color: green;">${date} </div>
+            <div>
+                  ${content}
+                 
+                  </p>
+            </div>
+          
+      </div>
+      
+      
+  </body>
+
+</html>
+
+    
+};
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });

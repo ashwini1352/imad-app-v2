@@ -9,11 +9,24 @@ var articleOne = {
     title : 'Article One | Ashwini',
     heading:'Article One',
     date :'8th Feb-17',
-    content : `This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here.. can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
-
-This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here.. can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
-
-This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here.. can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..`
+    content : `
+                  <p>
+                      This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
+                  can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
+                
+                  </p>
+                  
+                   <p>
+                       This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
+                  can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
+                 
+                  </p>
+                  
+                   <p>
+                       This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
+                  can you let me??This is the starting content used in the file.Hey let's add more to it and enjoy the fun of typing some nice things here..
+                 
+                  </p>`
 };
 
 function createTemplate (data){
@@ -22,12 +35,8 @@ function createTemplate (data){
     var date = data.date;
     var content = data.content;
     
-}
-
-
-
-
-var htmlTemplate =`
+    
+    var htmlTemplate =`
  <html>
   <head>
     <title>${title}</title>
@@ -57,6 +66,15 @@ var htmlTemplate =`
 
     
 `;
+
+return htmlTemplate;
+    
+}
+
+
+
+
+
 
 
 
